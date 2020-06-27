@@ -39,4 +39,10 @@ function createAutoDropDown({
       }
     })
   );
+
+  document.addEventListener("click", e => {
+    if (!parentDiv.contains(e.target)) {
+      suggestionsElm.style.display = "none";
+    }
+  });
 }
