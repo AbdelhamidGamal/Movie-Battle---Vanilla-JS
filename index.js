@@ -5,7 +5,7 @@ const state = {
 
 async function searchAPI(term) {
   try {
-    const res = await axios.get(`http://www.omdbapi.com/`, {
+    const res = await axios.get(`https://www.omdbapi.com/`, {
       params: {
         apikey: "6254a287",
         s: term
@@ -22,7 +22,7 @@ async function searchAPI(term) {
 
 async function getMovieData(movieId) {
   try {
-    const res = await axios.get(`http://www.omdbapi.com/`, {
+    const res = await axios.get(`https://www.omdbapi.com/`, {
       params: {
         apikey: "6254a287",
         i: movieId
